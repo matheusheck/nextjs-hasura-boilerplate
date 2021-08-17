@@ -1,3 +1,25 @@
 table:
   name: users
   schema: public
+array_relationships:
+- name: games_likes
+  using:
+    foreign_key_constraint_on:
+      column: user_id
+      table:
+        name: games_likes
+        schema: public
+- name: games_owners
+  using:
+    foreign_key_constraint_on:
+      column: user_id
+      table:
+        name: games_owners
+        schema: public
+- name: games_wishes
+  using:
+    foreign_key_constraint_on:
+      column: user_id
+      table:
+        name: games_wishes
+        schema: public
