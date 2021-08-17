@@ -2,8 +2,8 @@ version: "3"
 
 services:
   backend:
-    container_name: nhb-backend
-    image: nhb-backend
+    container_name: replay-backend
+    image: replay-backend
     build:
       context: ./backend
     depends_on:
@@ -17,7 +17,7 @@ services:
       - "8080:8080"
 
   db:
-    container_name: nhb-db
+    container_name: replay-db
     image: postgres:13.0-alpine
     ports:
       - "5432:5432"
@@ -31,8 +31,8 @@ services:
       retries: 5
 
   frontend:
-    container_name: nhb-frontend
-    image: nhb-frontend
+    container_name: replay-frontend
+    image: replay-frontend
     build:
       context: ./frontend
     ports:
