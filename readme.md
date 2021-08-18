@@ -50,44 +50,47 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are a lot of little challenges we do applying for developer position. This repo come from one of those that want a production style code in a simple task.
+There are a lot of little challenges we do applying for developer position. This repo come from one of those greats that you really want to see in production.
 
-What is important in production:
-* Test your code! (Agile is already 20 y.o.)
-* Document: let's communicate well
-* If want to be SOLID, refact it using DDD and clean thinking and smile! :smile:
+This challenge required features for a great Board Games tracking. Something between 9GAG, Reddit or Product Hunt.
+As propose, follow the business rules (written like tests).
 
-For this challenge there feature required some Business Rules.
+- It should show a list of games provided by Hasura
+- It should use Sever Side Render provided by Next.JS to correct SEO indexation
+- It should catch user data about games: Likes, game owners and who wish with the game
 
-* should return a string with the path of unordered travels
+* This project runs containerized on Docker
 
-For me it is always important that your System require error handling, here showed throwing error if invalid input or inconclusive output.
+Feel free to run it! If you like, please help me maintain! :smile:
 
 
 ### Built With
 
-This repo is built using JavaScript for Node and tested using Mocha (Chai Assert). (Too Vanilla?)
+This repo is built using TypeScript for Next on Front and Backend by Hasura.
 
-* [Node](https://nodejs.org/en/)
-* [Chai](https://www.chaijs.com)
+* [Next.JS](https://nextjs.org/)
+* [Hasura](https://hasura.io/)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To check this code, clone it and use as a Service or Util file or check it using  TDD (Test Driven Development) principle: you can easily run the test script and start seeing how the repo was thought.
+To check this code, clone it and use as you need: you can easily run yarn dev script and start seeing how the repo was thought.
 
 ### Prerequisites
 
-To use JavaScript out of the browser NODE.JS is the popular form. I recommend it but you can also recommend check Deno, a new JS V8 runner (keep it on track at least).
+To use TS/JavaScript out of the browser NODE.JS is the popular form and use Docker to compose this images and run within the planned environment. 
 
+* [Docker](https://nodejs.org/en/)
 * [Node](https://nodejs.org/en/)
-* [Deno](https://deno.land)
 
 ## Other interesting repositories
 
+This repo is a fork of a really nice Boilerplate, take a look. And about TS/JS, I recommend using node and this ecosystem but you can also recommend check Deno, a new JS V8 runner also developed by Ryan Dahl 10 years after Node initial release.
+
 1. [Hasura Next.js boilerplate](https://nirmalyaghosh.com/guides/nextjs-hasura-boilerplate)
+2. [Deno](https://deno.land)
 
 
 ### Coding and Testing
@@ -110,20 +113,20 @@ To use JavaScript out of the browser NODE.JS is the popular form. I recommend it
    ```
   We need to start Docker and then run the above command (with at least 4gb dedicated). The Hasura console will be available at http://localhost:8080/console. The Hasura GraphQL endpoint will be up and running on http://localhost:8080/v1/graphql. The Next.js application will be available at http://localhost:3000/.
 
-<!-- ROADMAP -->
-## Testing
+<!-- Troubleshooting -->
+## Troubleshooting
 
-To test your code is very easy once the is a script test that runs mocha on the terminal.
+- Hasura docker crash and restart with "Exit 137" error
+    - Increase ram to at least 4gb for ex.
 
-```sh
-   npm test
-   ```
+- Hasura docker crash and restart with "Exit 137" error
+    - Increase ram to at least 4gb for ex.
 
-   ```sh
-   yarn test
-   ```
-
-
+- Hasura docker crash and restart with "Exit 137" error
+    - Increase ram to at least 4gb for ex.
+    
+- Hasura docker crash and restart with "Exit 137" error
+    - Increase ram to at least 4gb for ex.
 
 <!-- CONTRIBUTING -->
 ## Contributing
