@@ -93,7 +93,7 @@ This repo is a fork of a really nice Boilerplate, take a look. And about TS/JS, 
 2. [Deno](https://deno.land)
 
 
-### Coding and Testing
+### Coding
 
 1. Clone the repo
    ```sh
