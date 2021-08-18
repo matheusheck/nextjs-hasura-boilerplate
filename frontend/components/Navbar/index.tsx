@@ -3,8 +3,10 @@ import {
   Box,
   Button,
   IconButton,
+  Img,
   Link as _Link,
   Stack,
+  Text,
   useColorMode,
 } from "@chakra-ui/react";
 import { NextComponentType } from "next";
@@ -30,9 +32,9 @@ const Navbar: NextComponentType = () => {
 
   const linksForAuthenticatedUsers = [
     {
-      id: "feeds",
-      label: "Feeds",
-      href: "/feeds",
+      id: "games",
+      label: "Games",
+      href: "/games",
     },
     {
       id: "myAccount",
@@ -106,7 +108,8 @@ const Navbar: NextComponentType = () => {
             w="full"
           >
             <Box>
-              <Stack isInline spacing={4} align="center" fontWeight="semibold">
+              <Stack isInline spacing={5} align="center" fontWeight="semibold">
+                <Text fontSize="3xl" fontWeight="thin">RE<strong>PLAY</strong></Text>
                 {linksForAllUsers.map((link) => {
                   return (
                     <Box key={link.id}>
