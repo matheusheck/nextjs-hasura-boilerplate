@@ -58,7 +58,7 @@ const IndexPageComponent = () => {
         alignItems="center"
       >
         <Stack spacing={4} maxW="xl" mx="auto">
-          <Heading textAlign="center">REPLAY</Heading>
+        <Text fontSize="3xl" fontWeight="thin" textAlign="center">RE<strong>PLAY</strong></Text>
           <Text fontSize="xl" lineHeight="tall" textAlign="center">
           Web app to curate board games using Hasura and Next.js. This 
           application has been built using Chakra UI, NextAuth.js and 
