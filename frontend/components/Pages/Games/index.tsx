@@ -5,7 +5,7 @@ import { useFetchFeedsSubscription } from "generated-graphql";
 import React from "react";
 import IGame from "types/game";
 
-const FeedsPageComponent = () => {
+const GamesPageComponent = () => {
   //  const { games } = useFetchFeedsSubscription();
 
   const games = [{
@@ -27,7 +27,8 @@ const FeedsPageComponent = () => {
       }
     ],
     "creator": "John Doe"
-  }];
+  },
+];
 
   if (!games) {
     return <Loader />;
@@ -46,4 +47,4 @@ const FeedsPageComponent = () => {
   );
 };
 
-export default FeedsPageComponent;
+export default GamesPageComponent;
