@@ -1,5 +1,6 @@
 import { CalendarIcon, ChatIcon, CheckIcon, NotAllowedIcon, StarIcon, TimeIcon, TriangleUpIcon } from "@chakra-ui/icons";
 import { Avatar, Box, Button, HStack, Img, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React, { FC } from "react";
 import IGame from "types/game";
 
@@ -10,6 +11,7 @@ interface IProps {
 const Game: FC<IProps> = ({ game }) => {
   const gameCard = () => {
     return (
+      <Link href={`/games/${game.id}`}>
       <Stack
         spacing={4}
         isInline
@@ -45,6 +47,7 @@ const Game: FC<IProps> = ({ game }) => {
           </Stack>
           
       </Stack>
+      </Link>
     );
   };
 
