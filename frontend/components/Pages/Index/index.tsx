@@ -58,11 +58,11 @@ const IndexPageComponent = () => {
         alignItems="center"
       >
         <Stack spacing={4} maxW="xl" mx="auto">
-          <Heading textAlign="center">Nextjs Hasura Boilerplate</Heading>
+          <Heading textAlign="center">REPLAY</Heading>
           <Text fontSize="xl" lineHeight="tall" textAlign="center">
-            Boilerplate for building applications using Hasura and Next.js. This
-            demo application has been built using Chakra UI, NextAuth.js and
-            Apollo.
+          Web app to curate board games using Hasura and Next.js. This 
+          application has been built using Chakra UI, NextAuth.js and 
+          Apollo.
           </Text>
           <Box>
             <Stack isInline align="center" justifyContent="center">
