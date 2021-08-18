@@ -22,7 +22,7 @@ const Game: FC<IProps> = ({ game }) => {
           src={game.image}
           alt={game.name}
           borderRadius="20px" />
-          <Stack>
+          <Stack alignItems="center">
             <Text fontWeight="bold">{game.name}</Text>
             <Text >by: <strong>{game.creator}</strong></Text>
             <HStack justifyContent="space-around" borderTopWidth={1} width="220px">
